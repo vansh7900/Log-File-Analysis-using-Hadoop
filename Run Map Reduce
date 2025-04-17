@@ -1,0 +1,3 @@
+hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-*.jar \
+-input /logdata/access_log -output /logoutput \
+-mapper mapper.py -reducer reducer.py
